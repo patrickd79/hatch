@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -24,9 +25,13 @@ public class APIRequestResource {
     //@Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping("/posts")
-    public String getPosts(){
-        String posts = "Posts";
+    //@RequestMapping("/posts")
+    //@ResponseBody
+    //public Post getPostObject({
+
+    //});
+    //public String getPosts(){
+        //String posts = "Posts";
         /*ResponseEntity<Object[]> responseEntity =
                 restTemplate.getForEntity("https://api.hatchways.io/assessment/blog/posts?tag=tech", Object[].class);
         Object[] objects = responseEntity.getBody();
@@ -39,8 +44,8 @@ public class APIRequestResource {
          /*String posts = restTemplate.getForObject(
                 "https://api.hatchways.io/assessment/blog/posts?tag=tech", JSON.class
         );*/
-         return posts;
-    }
+         //return posts;
+   // }
 
 
 
